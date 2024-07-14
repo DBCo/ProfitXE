@@ -3,7 +3,7 @@ unit About;
 interface
 
 uses
-  Windows, Messages, SysUtils, Classes, {Graphics, }Controls, Forms, Vcl.Graphics, System.StrUtils,
+  Windows, Messages, SysUtils, Classes, Controls, Forms, Vcl.Graphics, System.StrUtils,
   StdCtrls, ExtCtrls, ComCtrls, ToolWin, LogoForm, DeTypes;
 
 type

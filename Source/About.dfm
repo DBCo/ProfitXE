@@ -11,7 +11,7 @@ inherited Form_Da_About: TForm_Da_About
   OnClose = FormClose
   OnKeyPress = FormKeyPress
   ExplicitWidth = 480
-  ExplicitHeight = 406
+  ExplicitHeight = 407
   PixelsPerInch = 96
   TextHeight = 13
   object Label_dL_OSVersion: TLabel [0]
