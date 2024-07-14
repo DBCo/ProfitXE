@@ -1,0 +1,149 @@
+object Form_SendList: TForm_SendList
+  Left = 370
+  Top = 234
+  HelpContext = 1014
+  BorderIcons = []
+  BorderStyle = bsDialog
+  Caption = #1047#1072#1076#1072#1090#1100' '#1089#1086#1086#1073#1097#1077#1085#1080#1077' '#1080' '#1089#1087#1080#1089#1086#1082' '#1088#1072#1089#1089#1099#1083#1082#1080
+  ClientHeight = 308
+  ClientWidth = 529
+  Color = clBtnFace
+  ParentFont = True
+  OldCreateOrder = True
+  Position = poMainFormCenter
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 120
+  TextHeight = 16
+  object lReason: TLabel
+    Left = 20
+    Top = 12
+    Width = 326
+    Height = 32
+    Margins.Left = 4
+    Margins.Top = 4
+    Margins.Right = 4
+    Margins.Bottom = 4
+    AutoSize = False
+    Caption = #1047#1072#1095#1077#1084' '#1101#1090#1086' '#1074#1099#1083#1077#1079#1083#1086
+    WordWrap = True
+  end
+  object btnPanel: TPanel
+    Left = 0
+    Top = 261
+    Width = 529
+    Height = 47
+    Margins.Left = 4
+    Margins.Top = 4
+    Margins.Right = 4
+    Margins.Bottom = 4
+    Align = alBottom
+    BevelOuter = bvLowered
+    Color = clSilver
+    FullRepaint = False
+    TabOrder = 0
+    object ToolBar3: TToolBar
+      Left = 372
+      Top = 1
+      Width = 75
+      Height = 45
+      Align = alRight
+      AutoSize = True
+      ButtonHeight = 38
+      ButtonWidth = 75
+      Caption = 'ToolBar1'
+      Ctl3D = False
+      EdgeInner = esNone
+      EdgeOuter = esNone
+      Images = DM.ilIcon32
+      List = True
+      ParentShowHint = False
+      ShowCaptions = True
+      ShowHint = True
+      TabOrder = 0
+      ExplicitLeft = 368
+      object ButtonOK: TToolButton
+        Left = 0
+        Top = 0
+        Caption = 'Ok'
+        ImageIndex = 163
+        OnClick = A_OkExecute
+      end
+    end
+    object ToolBar1: TToolBar
+      Left = 447
+      Top = 1
+      Width = 81
+      Height = 45
+      Align = alRight
+      AutoSize = True
+      ButtonHeight = 38
+      ButtonWidth = 81
+      Caption = 'ToolBar1'
+      Ctl3D = False
+      EdgeInner = esNone
+      EdgeOuter = esNone
+      Images = DM.ilIcon32
+      List = True
+      ParentShowHint = False
+      ShowCaptions = True
+      ShowHint = True
+      TabOrder = 1
+      ExplicitLeft = 443
+      object ToolButton3: TToolButton
+        Left = 0
+        Top = 0
+        Caption = 'Cancel'
+        ImageIndex = 3956
+        OnClick = ToolButton3Click
+      end
+    end
+  end
+  object mComments: TMemo
+    Left = 20
+    Top = 49
+    Width = 493
+    Height = 90
+    Margins.Left = 4
+    Margins.Top = 4
+    Margins.Right = 4
+    Margins.Bottom = 4
+    ScrollBars = ssVertical
+    TabOrder = 1
+    OnChange = mCommentsChange
+  end
+  object GroupBox1: TGroupBox
+    Left = 10
+    Top = 148
+    Width = 503
+    Height = 90
+    Margins.Left = 4
+    Margins.Top = 4
+    Margins.Right = 4
+    Margins.Bottom = 4
+    Caption = #1055#1086#1083#1091#1095#1072#1090#1077#1083#1100
+    TabOrder = 2
+    object RecipientList: TListView
+      Left = 10
+      Top = 20
+      Width = 484
+      Height = 60
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
+      Checkboxes = True
+      Columns = <
+        item
+          Width = 246
+        end>
+      ReadOnly = True
+      ShowColumnHeaders = False
+      TabOrder = 0
+      ViewStyle = vsReport
+      OnKeyUp = RecipientListKeyUp
+      OnMouseUp = RecipientListMouseUp
+    end
+  end
+end

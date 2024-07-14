@@ -1,0 +1,15 @@
+Go_Da_MainMenu
+|
+act_Da_Open
+act_Da_Create
+|
+act_Da_Cut
+act_Da_Copy
+act_Da_Paste
+act_Da_Delete
+|
+Go_Da_Find
+act_Da_Filter
+|
+Go_Da_Report
+
